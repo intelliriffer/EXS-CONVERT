@@ -30,6 +30,16 @@ function processSFZ(s) {
         let cmd = `sox "${f}" -t wavpcm "${ofile}"`;
         let c = execSync(cmd);
     });
+    let wavs = fs.readdirSync(sDir).filter(d => d.toLowerCase().endsWith(".wav"));
+    wavs.forEach(a => {
+        let f = path.join(sDir, a);
+        let odir = path.join(tDir, m[1]);
+        if (!fs.existsSync(odir)) fs.mkdirSync(odir);
+        let ofile = path.join(odir, a);
+        fs.copyFileSync(f, ofile);
+
+    });
+
     let oData = fData.replaceAll('.aif ', '.WAV ');
     fs.writeFileSync(path.join(tDir, path.basename(s)), oData);
     console.log(`Converted: ${path.basename(s)}`);

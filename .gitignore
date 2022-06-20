@@ -4,5 +4,12 @@
 *.AIF
 *.sfz
 *.SFZ
-EXS/*/
+EXS/*
 CONVERT-WITH-MOSS/*/
+.DS_Store
+.xpm
+.multisample
+.ksf
+.kpm
+.exs
+CONVERTED
