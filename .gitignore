@@ -1,0 +1,8 @@
+*.wav
+*.WAV
+*.aif
+*.AIF
+*.sfz
+*.SFZ
+EXS/*/
+CONVERT-WITH-MOSS/*/
