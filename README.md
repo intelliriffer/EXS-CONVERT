@@ -15,21 +15,23 @@
 2. Next Using the Script (STEP2.sh), The Aif Files are converted to Wav files (Using Sox) and A new SFZ file is created with aif references replaced with WAV references. All the Files are Generated in the CONVERT-WITH-MOSS Directory.
 3. Using Convert With Moss and Using sfz as source Format, you can convert to any destination format supported by ConvertWithMoss Tool.
 
-##Instructions (Suggested Workflow)
-1. Create Your AutoSampled EXS instruments using Logic/Mainstage.
-2. Copy the EXS files to the EXS Folder in this archive.
-3. Run EXS2SFZ
+## Instructions (Suggested Workflow)
+1. Download the zip of this Repository and Extract to some location on your Mac.
+2. Create Your AutoSampled EXS instruments using Logic/Mainstage.
+3. Copy the EXS files to the EXS Folder of this Extracted Repository.
+
+4. Run EXS2SFZ
    1. Click Load EXS and Browse this EXS Directory and OPen one of the EXS files
    2. All other EXS files will also Load in the Progam (List View)
    3. Choose Option **...no path offset** and **check Copy Samples to SFZ-Directory**
    4. Click **Export SFZ**
    5. Repeat Steps 3-4 for Other Exs Files in List View.
    6. If you Followed All Steps Correctly the sfz files and the Required samples Should have been copied to same EXS directory.
-4. Run the **STEP2.sh** script from terminal or double clicking it. If it does not run, your might need to open terminal and make it executable using the command: chmod +x STEP2.sh
-5. This STEP2.sh Script Will Convert All SFZ files and .aif samples to .WAV and Save to CONVERT-WITH-MOSS Directory.
-6. Run ConvertWithMoss App on this Folder, Choose SFZ as Source Type and Browse/Select  the CONVERT-WITH-MOSS Folder. 
-7. Choose a Destination Directory and Format and then Use Convert to Convert All to your Desired Format.
-8. After Testing The Converted Files, you can delete the Files in EXS and CONVERT-WITH-MOSS directory to cleanup.
+5. Run the **STEP2.sh** script from terminal or double clicking it. If it does not run, your might need to open terminal and make it executable using the command: chmod +x STEP2.sh
+6. This STEP2.sh Script Will Convert All SFZ files and .aif samples to .WAV and Save to CONVERT-WITH-MOSS Directory.
+7. Run ConvertWithMoss App on this Folder, Choose SFZ as Source Type and Browse/Select  the CONVERT-WITH-MOSS Folder. 
+8. Choose a Destination Directory and Format and then Use Convert to Convert All to your Desired Format.
+9. After Testing The Converted Files, you can delete the Files in EXS and CONVERT-WITH-MOSS directory to cleanup.
 
 
 
